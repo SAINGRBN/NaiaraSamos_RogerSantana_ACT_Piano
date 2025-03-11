@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.naiarasamos_rogersantana_act_piano"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.naiarasamos_rogersantana_act_piano"

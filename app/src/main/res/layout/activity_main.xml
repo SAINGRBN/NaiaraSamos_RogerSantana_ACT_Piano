@@ -1,11 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@android:color/black"
     tools:context=".MainActivity">
 
- 
+    <!-- Tecla C -->
+    <ImageButton
+        android:id="@+id/key_c"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/key_selector"
+        android:scaleType="fitXY"
+        android:contentDescription="Nota C"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Tecla D -->
+    <ImageButton
+        android:id="@+id/key_d"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/key_selector"
+        android:scaleType="fitXY"
+        android:contentDescription="Nota D"/>
+
+    <!-- Tecla E -->
+    <ImageButton
+        android:id="@+id/key_e"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/key_selector"
+        android:scaleType="fitXY"
+        android:contentDescription="Nota E"/>
+
+    <!-- Tecla F -->
+    <ImageButton
+        android:id="@+id/key_f"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/key_selector"
+        android:scaleType="fitXY"
+        android:contentDescription="Nota F"/>
+
+    <!-- Tecla G -->
+    <ImageButton
+        android:id="@+id/key_g"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/key_selector"
+        android:scaleType="fitXY"
+        android:contentDescription="Nota G"/>
+
+    <!-- Tecla A -->
+    <ImageButton
+        android:id="@+id/key_a"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/key_selector"
+        android:scaleType="fitXY"
+        android:contentDescription="Nota A"/>
+
+    <!-- Tecla B -->
+    <ImageButton
+        android:id="@+id/key_b"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/key_selector"
+        android:scaleType="fitXY"
+        android:contentDescription="Nota B"/>
+</LinearLayout>
