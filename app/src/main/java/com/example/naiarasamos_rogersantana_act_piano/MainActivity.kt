@@ -31,8 +31,12 @@ class MainActivity : AppCompatActivity() {
 
         // Cargar sonidos en el mapa
         val keys = mapOf(
-            R.id.key_c to R.raw.c2, R.id.key_d to R.raw.d2, R.id.key_e to R.raw.e2,
-            R.id.key_f to R.raw.f2, R.id.key_g to R.raw.g2, R.id.key_a to R.raw.a2, R.id.key_b to R.raw.b2
+            R.id.key_c2 to R.raw.c2, R.id.key_d2 to R.raw.d2, R.id.key_e2 to R.raw.e2,
+            R.id.key_f2 to R.raw.f2, R.id.key_g2 to R.raw.g2, R.id.key_a2 to R.raw.a2, R.id.key_b2 to R.raw.b2,
+
+            R.id.key_c3 to R.raw.c3, R.id.key_d3 to R.raw.d3, R.id.key_e3 to R.raw.e3,
+            R.id.key_f3 to R.raw.f3, R.id.key_g3 to R.raw.g3, R.id.key_a3 to R.raw.a3, R.id.key_b3 to R.raw.b3,
+            R.id.key_c4 to R.raw.c4
         )
 
         keys.forEach { (key, sound) -> soundMap[key] = soundPool.load(this, sound, 1) }
