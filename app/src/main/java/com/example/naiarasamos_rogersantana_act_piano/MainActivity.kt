@@ -18,9 +18,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Configurar SoundPool con baja latencia y multitouch
+
         soundPool = SoundPool.Builder()
-            .setMaxStreams(10)
+            .setMaxStreams(25)
             .setAudioAttributes(
                 AudioAttributes.Builder()
                     .setUsage(AudioAttributes.USAGE_MEDIA)
@@ -36,12 +36,19 @@ class MainActivity : AppCompatActivity() {
 
             R.id.key_c3 to R.raw.c3, R.id.key_d3 to R.raw.d3, R.id.key_e3 to R.raw.e3,
             R.id.key_f3 to R.raw.f3, R.id.key_g3 to R.raw.g3, R.id.key_a3 to R.raw.a3, R.id.key_b3 to R.raw.b3,
-            R.id.key_c4 to R.raw.c4
+            R.id.key_c4 to R.raw.c4,
+
+            R.id.key_a_2 to R.raw.a_2, R.id.key_a_3 to R.raw.a_3, R.id.key_c_2 to R.id.key_c_2,
+            R.id.key_c_3 to R.raw.c_3, R.id.key_d_2 to R.raw.d_2, R.id.key_d_3 to R.raw.d_3,
+            R.id.key_f_2 to R.raw.f_2, R.id.key_f_3 to R.raw.f_3, R.id.key_g_2 to R.id.key_g_2, R.id.key_g_3 to R.raw.g_3
         )
 
-        keys.forEach { (key, sound) -> soundMap[key] = soundPool.load(this, sound, 1) }
+        // Se añade cada sonido al SoundPool
+        keys.forEach {
+            (key, sound) -> soundMap[key] = soundPool.load(this, sound, 1)
+        }
 
-        // Asignar eventos a cada tecla
+        // Se asigna el listener a cada botón
         keys.keys.forEach { setKeyListener(it) }
     }
 
@@ -52,18 +59,16 @@ class MainActivity : AppCompatActivity() {
         key.setOnTouchListener { v, event ->
             if (event.action == MotionEvent.ACTION_DOWN) {
                 soundMap[keyId]?.let { soundPool.play(it, 1f, 1f, 0, 0, 1f) }
+
+                //Para ver si funciona
                 val toast = Toast.makeText(this, keyId.toString(), Toast.LENGTH_SHORT) // in Activity
                 toast.show()
 
-                v.performClick() // Llamamos a performClick()
+                v.performClick()
             }
             true
         }
 
-
-        key.setOnClickListener {
-            // Sobreescribimos performClick() correctamente
-        }
     }
 
     override fun onDestroy() {

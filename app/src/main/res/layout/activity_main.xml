@@ -1,179 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:background="@android:color/black"
-    tools:context=".MainActivity">
+    android:background="@android:color/black">
 
-    <!-- Tecla C -->
-    <ImageButton
-        android:id="@+id/key_c2"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:background="@drawable/blanca"
-        android:scaleType="fitXY"
-        android:contentDescription="Nota C"
-        tools:ignore="TouchTargetSizeCheck"/>
-
-    <!-- Tecla D -->
-    <ImageButton
-        android:id="@+id/key_d2"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:background="@drawable/blanca"
-        android:scaleType="fitXY"
-        android:contentDescription="Nota D"
-        tools:ignore="TouchTargetSizeCheck"/>
-
-    <!-- Tecla E -->
-    <ImageButton
-        android:id="@+id/key_e2"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:background="@drawable/blanca"
-        android:scaleType="fitXY"
-        android:contentDescription="Nota E"
-        tools:ignore="TouchTargetSizeCheck"/>
-
-    <!-- Tecla F -->
-    <ImageButton
-        android:id="@+id/key_f2"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:background="@drawable/blanca"
-        android:scaleType="fitXY"
-        android:contentDescription="Nota F"
-        tools:ignore="TouchTargetSizeCheck"/>
-
-    <!-- Tecla G -->
-    <ImageButton
-        android:id="@+id/key_g2"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:background="@drawable/blanca"
-        android:scaleType="fitXY"
-        android:contentDescription="Nota G"
-        tools:ignore="TouchTargetSizeCheck"/>
-
-    <!-- Tecla A -->
-    <ImageButton
-        android:id="@+id/key_a2"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:background="@drawable/blanca"
-        android:scaleType="fitXY"
-        android:contentDescription="Nota A"
-        tools:ignore="TouchTargetSizeCheck"/>
-
-    <!-- Tecla B -->
-    <ImageButton
-        android:id="@+id/key_b2"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:background="@drawable/blanca"
-        android:scaleType="fitXY"
-        android:contentDescription="Nota B"
-        tools:ignore="TouchTargetSizeCheck"/>
-
-    <!-- Tecla C -->
-    <ImageButton
-        android:id="@+id/key_c3"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:background="@drawable/blanca"
-        android:scaleType="fitXY"
-        android:contentDescription="Nota C"
-        tools:ignore="TouchTargetSizeCheck"/>
-
-    <!-- Tecla D -->
-    <ImageButton
-        android:id="@+id/key_d3"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:background="@drawable/blanca"
-        android:scaleType="fitXY"
-        android:contentDescription="Nota D"
-        tools:ignore="TouchTargetSizeCheck"/>
-
-    <!-- Tecla E -->
-    <ImageButton
-        android:id="@+id/key_e3"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:background="@drawable/blanca"
-        android:scaleType="fitXY"
-        android:contentDescription="Nota E"
-        tools:ignore="TouchTargetSizeCheck"/>
-
-    <!-- Tecla F -->
-    <ImageButton
-        android:id="@+id/key_f3"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:background="@drawable/blanca"
-        android:scaleType="fitXY"
-        android:contentDescription="Nota F"
-        tools:ignore="TouchTargetSizeCheck"/>
-
-    <!-- Tecla G -->
-    <ImageButton
-        android:id="@+id/key_g3"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:background="@drawable/blanca"
-        android:contentDescription="Nota G"
-        android:scaleType="fitXY"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <!-- Tecla A -->
-    <ImageButton
-        android:id="@+id/key_a3"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:background="@drawable/blanca"
-        android:scaleType="fitXY"
-        android:contentDescription="Nota A"
-        tools:ignore="TouchTargetSizeCheck"/>
-
-    <!-- Tecla B -->
-    <ImageButton
-        android:id="@+id/key_b3"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:background="@drawable/blanca"
-        android:scaleType="fitXY"
-        android:contentDescription="Nota B"
-        tools:ignore="TouchTargetSizeCheck"/>
-
-    <ImageButton
-        android:id="@+id/key_c4"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:background="@drawable/blanca"
-        android:scaleType="fitXY"
-        android:contentDescription="Nota C"
-        tools:ignore="TouchTargetSizeCheck"/>
+    <!-- Teclas Blancas -->
     <LinearLayout
-     android:layout_height="match_parent"
-        android:layout_width="200dp">
+        android:id="@+id/white_keys"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton android:id="@+id/key_c2" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:background="@drawable/blanca" android:scaleType="fitXY"/>
+        <ImageButton android:id="@+id/key_d2" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:background="@drawable/blanca" android:scaleType="fitXY"/>
+        <ImageButton android:id="@+id/key_e2" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:background="@drawable/blanca" android:scaleType="fitXY"/>
+        <ImageButton android:id="@+id/key_f2" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:background="@drawable/blanca" android:scaleType="fitXY"/>
+        <ImageButton android:id="@+id/key_g2" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:background="@drawable/blanca" android:scaleType="fitXY"/>
+
+        <ImageButton
+            android:id="@+id/key_a2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/blanca"
+            android:scaleType="fitXY"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <ImageButton android:id="@+id/key_b2" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:background="@drawable/blanca" android:scaleType="fitXY"/>
+
+        <ImageButton
+            android:id="@+id/key_c3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/blanca"
+            android:scaleType="fitXY"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <ImageButton android:id="@+id/key_d3" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:background="@drawable/blanca" android:scaleType="fitXY"/>
+        <ImageButton android:id="@+id/key_e3" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:background="@drawable/blanca" android:scaleType="fitXY"/>
+        <ImageButton android:id="@+id/key_f3" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:background="@drawable/blanca" android:scaleType="fitXY"/>
+
+        <ImageButton
+            android:id="@+id/key_g3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/blanca"
+            android:scaleType="fitXY"
+            tools:ignore="TouchTargetSizeCheck" />
+        <ImageButton android:id="@+id/key_a3" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:background="@drawable/blanca" android:scaleType="fitXY"/>
+        <ImageButton android:id="@+id/key_b3" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:background="@drawable/blanca" android:scaleType="fitXY"/>
+        <ImageButton android:id="@+id/key_c4" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:background="@drawable/blanca" android:scaleType="fitXY"/>
+    </LinearLayout>
+
+    <!-- Teclas Negras -->
+    <LinearLayout
+        android:id="@+id/black_keys"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:paddingBottom="100dp">
+
+        <!-- Espacio antes de la primera tecla negra -->
+        <View android:layout_width="0dp" android:layout_weight="0.5" android:layout_height="match_parent" android:background="@android:color/transparent"/>
+
+        <ImageButton
+            android:id="@+id/key_c_2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/negra"
+            android:scaleType="fitXY"/>
+
+        <ImageButton
+            android:id="@+id/key_d_2"
+            android:layout_width="2dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/negra"
+            android:scaleType="fitXY"/>
+
+        <!-- Espacio entre D# y F# -->
+        <View android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:background="@android:color/transparent"/>
+
+        <ImageButton
+            android:id="@+id/key_f_2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/negra"
+            android:scaleType="fitXY"/>
+
+        <ImageButton
+            android:id="@+id/key_g_2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/negra"
+            android:scaleType="fitXY"/>
 
         <ImageButton
             android:id="@+id/key_a_2"
@@ -181,81 +107,38 @@
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:background="@drawable/negra"
-            android:scaleType="fitXY"
-            android:contentDescription="Nota C"
-            tools:ignore="TouchTargetSizeCheck"/>
-        <ImageButton
-            android:id="@+id/key_a_3"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:background="@drawable/negra"
-            android:scaleType="fitXY"
-            android:contentDescription="Nota C"
-            tools:ignore="TouchTargetSizeCheck"/>
-        <ImageButton
-            android:id="@+id/key_c_2"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:background="@drawable/negra"
-            android:scaleType="fitXY"
-            android:contentDescription="Nota C"
-            tools:ignore="TouchTargetSizeCheck"/>
+            android:scaleType="fitXY"/>
+
+        <!-- Espacio entre A# y C# de la siguiente octava -->
+        <View android:layout_width="0dp" android:layout_weight="0.5" android:layout_height="match_parent" android:background="@android:color/transparent"/>
+
         <ImageButton
             android:id="@+id/key_c_3"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:background="@drawable/negra"
-            android:scaleType="fitXY"
-            android:contentDescription="Nota C"
-            tools:ignore="TouchTargetSizeCheck"/>
-        <ImageButton
-            android:id="@+id/key_d_2"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:background="@drawable/negra"
-            android:scaleType="fitXY"
-            android:contentDescription="Nota C"
-            tools:ignore="TouchTargetSizeCheck"/>
+            android:scaleType="fitXY"/>
+
         <ImageButton
             android:id="@+id/key_d_3"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:background="@drawable/negra"
-            android:scaleType="fitXY"
-            android:contentDescription="Nota C"
-            tools:ignore="TouchTargetSizeCheck"/>
-        <ImageButton
-            android:id="@+id/key_f_2"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:background="@drawable/negra"
-            android:scaleType="fitXY"
-            android:contentDescription="Nota C"
-            tools:ignore="TouchTargetSizeCheck"/>
+            android:scaleType="fitXY"/>
+
+        <!-- Espacio entre D# y F# -->
+        <View android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:background="@android:color/transparent"/>
+
         <ImageButton
             android:id="@+id/key_f_3"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:background="@drawable/negra"
-            android:scaleType="fitXY"
-            android:contentDescription="Nota C"
-            tools:ignore="TouchTargetSizeCheck"/>
-        <ImageButton
-            android:id="@+id/key_g_2"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:background="@drawable/negra"
-            android:scaleType="fitXY"
-            android:contentDescription="Nota C"
-            tools:ignore="TouchTargetSizeCheck"/>
+            android:scaleType="fitXY"/>
+
         <ImageButton
             android:id="@+id/key_g_3"
             android:layout_width="0dp"
@@ -263,9 +146,19 @@
             android:layout_height="match_parent"
             android:background="@drawable/negra"
             android:scaleType="fitXY"
-            android:contentDescription="Nota C"
+
             tools:ignore="TouchTargetSizeCheck"/>
 
-    </LinearLayout>
-</LinearLayout>
+        <ImageButton
+            android:id="@+id/key_a_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/negra"
+            android:scaleType="fitXY"
 
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+</FrameLayout>
