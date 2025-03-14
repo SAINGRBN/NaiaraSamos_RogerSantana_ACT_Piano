@@ -39,9 +39,9 @@ class MainActivity : AppCompatActivity() {
             R.id.key_f3 to R.raw.f3, R.id.key_g3 to R.raw.g3, R.id.key_a3 to R.raw.a3, R.id.key_b3 to R.raw.b3,
             R.id.key_c4 to R.raw.c4,
 
-            R.id.key_a_2 to R.raw.a_2, R.id.key_a_3 to R.raw.a_3, R.id.key_c_2 to R.id.key_c_2,
+            R.id.key_a_2 to R.raw.a_2, R.id.key_a_3 to R.raw.a_3, R.id.key_c_2 to R.raw.c_2,
             R.id.key_c_3 to R.raw.c_3, R.id.key_d_2 to R.raw.d_2, R.id.key_d_3 to R.raw.d_3,
-            R.id.key_f_2 to R.raw.f_2, R.id.key_f_3 to R.raw.f_3, R.id.key_g_2 to R.id.key_g_2, R.id.key_g_3 to R.raw.g_3
+            R.id.key_f_2 to R.raw.f_2, R.id.key_f_3 to R.raw.f_3, R.id.key_g_2 to R.raw.g_2, R.id.key_g_3 to R.raw.g_3
         )
 
         // Se añade cada sonido al SoundPool
@@ -62,13 +62,15 @@ class MainActivity : AppCompatActivity() {
                 soundMap[keyId]?.let { soundPool.play(it, 1f, 1f, 0, 0, 1f) }
 
                 // Al pulsar la tecla, se vuelva gris
-                key.setBackgroundColor(Color.GRAY);
+                //key.setBackgroundColor(Color.GRAY);
 
                 //Para ver si funciona
                 val toast = Toast.makeText(this, keyId.toString(), Toast.LENGTH_SHORT) // in Activity
                 toast.show()
 
                 v.performClick()
+            } else if(event.action == MotionEvent.ACTION_UP) {
+                
             }
             true
         }
