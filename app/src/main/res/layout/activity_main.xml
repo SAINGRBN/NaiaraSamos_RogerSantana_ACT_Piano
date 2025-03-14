@@ -23,7 +23,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintWidth_default="spread"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:tag="blanca"/>
 
     <ImageButton
         android:id="@+id/key_d2"
@@ -33,7 +34,9 @@
         app:layout_constraintStart_toEndOf="@id/key_c2"
         app:layout_constraintWidth_default="spread"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:ignore="SpeakableTextPresentCheck"/>
+        tools:ignore="SpeakableTextPresentCheck"
+        android:tag="blanca"
+        />
 
     <ImageButton
         android:id="@+id/key_e2"
@@ -43,6 +46,7 @@
         app:layout_constraintStart_toEndOf="@id/key_d2"
         app:layout_constraintWidth_default="spread"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:tag="blanca"
         tools:ignore="SpeakableTextPresentCheck"/>
 
     <ImageButton
@@ -53,6 +57,7 @@
         android:background="@drawable/blanca"
         app:layout_constraintStart_toEndOf="@id/key_e2"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:tag="blanca"
         tools:ignore="SpeakableTextPresentCheck"/>
 
     <ImageButton
@@ -63,6 +68,7 @@
         android:background="@drawable/blanca"
         app:layout_constraintStart_toEndOf="@id/key_f2"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:tag="blanca"
         tools:ignore="SpeakableTextPresentCheck"/>
 
     <ImageButton
@@ -73,6 +79,7 @@
         android:background="@drawable/blanca"
         app:layout_constraintStart_toEndOf="@id/key_g2"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:tag="blanca"
         tools:ignore="SpeakableTextPresentCheck"/>
 
     <ImageButton
@@ -83,6 +90,7 @@
         android:background="@drawable/blanca"
         app:layout_constraintStart_toEndOf="@id/key_a2"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:tag="blanca"
         tools:ignore="SpeakableTextPresentCheck"/>
 
     <ImageButton
@@ -92,6 +100,7 @@
         android:layout_weight="1"
         android:background="@drawable/blanca"
         app:layout_constraintStart_toEndOf="@+id/key_b2"
+        android:tag="blanca"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:ignore="SpeakableTextPresentCheck"/>
 
@@ -103,6 +112,7 @@
         android:background="@drawable/blanca"
         app:layout_constraintStart_toEndOf="@id/key_c3"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:tag="blanca"
         tools:ignore="SpeakableTextPresentCheck"/>
 
     <ImageButton
@@ -113,6 +123,7 @@
         android:background="@drawable/blanca"
         app:layout_constraintStart_toEndOf="@id/key_d3"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:tag="blanca"
         tools:ignore="SpeakableTextPresentCheck"/>
 
     <ImageButton
@@ -123,6 +134,7 @@
         android:background="@drawable/blanca"
         app:layout_constraintStart_toEndOf="@id/key_e3"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:tag="blanca"
         tools:ignore="SpeakableTextPresentCheck"/>
 
     <ImageButton
@@ -133,6 +145,7 @@
         android:background="@drawable/blanca"
         app:layout_constraintStart_toEndOf="@id/key_f3"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:tag="blanca"
         tools:ignore="SpeakableTextPresentCheck"/>
 
     <ImageButton
@@ -143,6 +156,7 @@
         android:background="@drawable/blanca"
         app:layout_constraintStart_toEndOf="@id/key_g3"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:tag="blanca"
         tools:ignore="SpeakableTextPresentCheck"/>
 
     <ImageButton
@@ -153,6 +167,7 @@
         android:background="@drawable/blanca"
         app:layout_constraintStart_toEndOf="@id/key_a3"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:tag="blanca"
         tools:ignore="SpeakableTextPresentCheck"/>
     <ImageButton
         android:id="@+id/key_c4"
@@ -162,6 +177,7 @@
         android:background="@drawable/blanca"
         app:layout_constraintStart_toEndOf="@id/key_b3"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:tag="blanca"
         tools:ignore="SpeakableTextPresentCheck"/>
 
 
@@ -176,6 +192,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="@id/key_c2"
         app:layout_constraintEnd_toEndOf="@id/key_d2"
+        android:tag="negra"
         tools:ignore="SpeakableTextPresentCheck"/>
 
     <ImageButton
@@ -188,6 +205,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="@id/key_d2"
         app:layout_constraintEnd_toEndOf="@id/key_e2"
+        android:tag="negra"
         tools:ignore="SpeakableTextPresentCheck"/>
 
     <ImageButton
@@ -200,6 +218,7 @@
         app:layout_constraintEnd_toEndOf="@id/key_g2"
         app:layout_constraintStart_toStartOf="@id/key_f2"
         app:layout_constraintTop_toTopOf="parent"
+        android:tag="negra"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
@@ -212,6 +231,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="@id/key_g2"
         app:layout_constraintEnd_toEndOf="@id/key_a2"
+        android:tag="negra"
         tools:ignore="SpeakableTextPresentCheck"/>
 
     <ImageButton
@@ -224,6 +244,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="@id/key_a2"
         app:layout_constraintEnd_toEndOf="@id/key_b2"
+        android:tag="negra"
         tools:ignore="SpeakableTextPresentCheck"/>
 
 
@@ -237,6 +258,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="@id/key_c3"
         app:layout_constraintEnd_toEndOf="@id/key_d3"
+        android:tag="negra"
         tools:ignore="SpeakableTextPresentCheck"/>
 
     <ImageButton
@@ -249,6 +271,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="@id/key_d3"
         app:layout_constraintEnd_toEndOf="@id/key_e3"
+        android:tag="negra"
         tools:ignore="SpeakableTextPresentCheck"/>
 
 
@@ -262,6 +285,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="@id/key_f3"
         app:layout_constraintEnd_toEndOf="@id/key_g3"
+        android:tag="negra"
         tools:ignore="SpeakableTextPresentCheck"/>
 
     <ImageButton
@@ -274,6 +298,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="@id/key_g3"
         app:layout_constraintEnd_toEndOf="@id/key_a3"
+        android:tag="negra"
         tools:ignore="SpeakableTextPresentCheck"/>
 
     <ImageButton
@@ -286,6 +311,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="@id/key_a3"
         app:layout_constraintEnd_toEndOf="@id/key_b3"
+        android:tag="negra"
         tools:ignore="SpeakableTextPresentCheck"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

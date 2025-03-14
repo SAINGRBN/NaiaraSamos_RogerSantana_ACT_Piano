@@ -1,5 +1,6 @@
 package com.example.naiarasamos_rogersantana_act_piano
 
+
 import android.annotation.SuppressLint
 import android.graphics.Color
 import android.media.AudioAttributes
@@ -53,7 +54,8 @@ class MainActivity : AppCompatActivity() {
         keys.keys.forEach { setKeyListener(it) }
     }
 
-    @SuppressLint("ClickableViewAccessibility")
+
+    @SuppressLint("ClickableViewAccessibility", "ResourceAsColor")
     private fun setKeyListener(keyId: Int) {
         val key = findViewById<ImageButton>(keyId)
 
@@ -61,16 +63,25 @@ class MainActivity : AppCompatActivity() {
             if (event.action == MotionEvent.ACTION_DOWN) {
                 soundMap[keyId]?.let { soundPool.play(it, 1f, 1f, 0, 0, 1f) }
 
-                // Al pulsar la tecla, se vuelva gris
-                //key.setBackgroundColor(Color.GRAY);
+                if ("blanca" == v.tag) {
+                    //ERRORORORORORORROROROROROROROROOOOOROROROOROROOR
+                    v.setBackgroundColor(Color.DKGRAY); // Gris claro para teclas blancas
+                } else if ("negra" == v.tag) {
+                    v.setBackgroundColor(Color.DKGRAY); // Gris oscuro para teclas negras
+                }
 
-                //Para ver si funciona
                 val toast = Toast.makeText(this, keyId.toString(), Toast.LENGTH_SHORT) // in Activity
                 toast.show()
 
                 v.performClick()
+                true
             } else if(event.action == MotionEvent.ACTION_UP) {
-                
+
+                if ("blanca" == v.tag) {
+                    v.setBackgroundResource(R.drawable.blanca);
+                } else if ("negra" == v.tag) {
+                    v.setBackgroundResource(R.drawable.negra);
+                }
             }
             true
         }
