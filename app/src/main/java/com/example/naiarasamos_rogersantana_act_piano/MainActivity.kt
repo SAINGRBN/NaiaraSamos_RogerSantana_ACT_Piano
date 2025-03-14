@@ -1,6 +1,7 @@
 package com.example.naiarasamos_rogersantana_act_piano
 
 import android.annotation.SuppressLint
+import android.graphics.Color
 import android.media.AudioAttributes
 import android.media.SoundPool
 import android.os.Bundle
@@ -59,6 +60,9 @@ class MainActivity : AppCompatActivity() {
         key.setOnTouchListener { v, event ->
             if (event.action == MotionEvent.ACTION_DOWN) {
                 soundMap[keyId]?.let { soundPool.play(it, 1f, 1f, 0, 0, 1f) }
+
+                // Al pulsar la tecla, se vuelva gris
+                key.setBackgroundColor(Color.GRAY);
 
                 //Para ver si funciona
                 val toast = Toast.makeText(this, keyId.toString(), Toast.LENGTH_SHORT) // in Activity
