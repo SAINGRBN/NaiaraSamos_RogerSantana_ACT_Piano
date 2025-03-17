@@ -20,7 +20,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
         soundPool = SoundPool.Builder()
             .setMaxStreams(25)
             .setAudioAttributes(
@@ -49,12 +48,9 @@ class MainActivity : AppCompatActivity() {
         keys.forEach {
             (key, sound) -> soundMap[key] = soundPool.load(this, sound, 1)
         }
-
         // Se asigna el listener a cada botón
         keys.keys.forEach { setKeyListener(it) }
     }
-
-
     @SuppressLint("ClickableViewAccessibility", "ResourceAsColor")
     private fun setKeyListener(keyId: Int) {
         val key = findViewById<ImageButton>(keyId)
@@ -62,32 +58,11 @@ class MainActivity : AppCompatActivity() {
         key.setOnTouchListener { v, event ->
             if (event.action == MotionEvent.ACTION_DOWN) {
                 soundMap[keyId]?.let { soundPool.play(it, 1f, 1f, 0, 0, 1f) }
-
-                if ("blanca" == v.tag) {
-                    //ERRORORORORORORROROROROROROROROOOOOROROROOROROOR
-                    v.setBackgroundColor(Color.DKGRAY); // Gris claro para teclas blancas
-                } else if ("negra" == v.tag) {
-                    v.setBackgroundColor(Color.DKGRAY); // Gris oscuro para teclas negras
-                }
-
-                val toast = Toast.makeText(this, keyId.toString(), Toast.LENGTH_SHORT) // in Activity
-                toast.show()
-
                 v.performClick()
-                true
-            } else if(event.action == MotionEvent.ACTION_UP) {
-
-                if ("blanca" == v.tag) {
-                    v.setBackgroundResource(R.drawable.blanca);
-                } else if ("negra" == v.tag) {
-                    v.setBackgroundResource(R.drawable.negra);
-                }
-            }
-            true
+           }
+            false
         }
-
     }
-
     override fun onDestroy() {
         super.onDestroy()
         soundPool.release()
